@@ -5,24 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Comm waebsite</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div>
-            <p>30% off for no one</p>
+            <p class="off-section">30% OFF for no one</p>
         </div>
-        <nav>
-            <div>
-                <img  width="60px" src="logo.jpg" alt="logo">
-                <h1>LootCart</h1>
+        <nav class="navbar">
+            <div class="left">
+                <img class="logo"  width="60px" src="logo.jpg" alt="logo">
+                <h1 class="igon">LootCart</h1>
             </div>
-            <ul>
+            <ul class="right">
                <li><a href="#">Home</a></li>
                <li><a href="#">About</a></li>
                <li><a href="#">Contact us</a></li>
-               <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+               <li><a href="#"><i class="fa-solid fa-user user-icon"></i></a></li>
         </nav>
-        <ul>
+        <ul class="categories">
             <li><a href="#">Men</a></li>
             <li><a href="#">Women</a></li>
             <li><a href="#">Children</a></li>
@@ -30,59 +31,66 @@
             <li><a href="#">Electronics</a></li>
         </ul>
     </header>
-    <hr>
-    <main>
-        <img src="https://media.giphy.com/media/th663v2mIIJJkmgixe/giphy.gif?cid=ecf05e47ukescdjth5esf1puuag70dqhzasc0ydsqa1o3ghj&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="">
-        <div>
+    <!-- <hr> -->
+    <main class="main">
+        <img class="main-img" src="https://media.giphy.com/media/th663v2mIIJJkmgixe/giphy.gif?cid=ecf05e47ukescdjth5esf1puuag70dqhzasc0ydsqa1o3ghj&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="">
+        <div class="additional">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nemo eum dolore voluptates possimus sit odio magnam tempora repellendus expedita!</p>
-            <button>Buy All</button>
-            <input type="search" placeholder="search...">
-            <button><i class="fa-solid fa-magnifying-glass-location"></i></button>
+            <button class="buy">Buy All</button>
+            <input class="search" type="search" placeholder="search...">
+            <i class="fa-solid fa-magnifying-glass-location search-btn"></i>
             
         </div>
-    </main><hr>
-    <section>
-        <h1>Featured Products</h1>
-        <div>
-            <img src="product1.jpg" alt="">
+    </main>
+    <!-- <hr> -->
+    <section class="products">
+        <h1 class="prod-head">Featured Products</h1>
+        <div class="product">
+            <div>
+            <img class="prod-img" src="product1.jpg" alt="">
             <div>
                 <p>Lorem ipsum dolor sit.</p>
-                <p>40$</p>
+                <span>$40</span>
+            </div>
             </div>
         <div>
-            <img src="product1.jpg" alt="">
+            <img class="prod-img" src="product1.jpg" alt="">
             <div>
                 <p>Lorem ipsum dolor sit.</p>
-                <p>40$</p>
+                <span>$40</span>
+            </div>
             </div>
         <div>
-            <img src="product1.jpg" alt="">
+            <img class="prod-img" src="product1.jpg" alt="">
             <div>
                 <p>Lorem ipsum dolor sit.</p>
-                <p>40$</p>
+                <span>$40</span>
+            </div>
             </div>
         <div>
-            <img src="product1.jpg" alt="">
+            <img class="prod-img" src="product1.jpg" alt="">
             <div>
                 <p>Lorem ipsum dolor sit.</p>
-                <p>40$</p>
+                <span>$40</span>
             </div>
         </div>
-    </section><hr>
-    <section>
-        <h1>Contact Us</h1>
-        <div>
+    </section>
+    <!-- <hr> -->
+    <section class="contact">
+        <h1 class="cont-head">Contact Us</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur adipisci eos quibusdam iste quo labore eligendi animi. Assumenda, eos nihil debitis exercitationem ratione voluptatibus quos illo. Fuga aperiam sunt, accusamus veritatis voluptas ducimus sequi vel reiciendis quaerat aliquid quod? Nam ad maxime odit dicta voluptas amet hic fugit tempore exercitationem, eveniet quos a officia atque veritatis deserunt quasi nisi. Id ex consequuntur enim nostrum eum repudiandae illo autem minus nemo laborum sit natus excepturi reprehenderit ipsam assumenda odit numquam quasi quae commodi eius modi veniam, ipsa quia. Molestiae atque ipsam, est voluptate modi, rerum quaerat deleniti, culpa distinctio voluptates explicabo!</p>
+        <div class="form">
             <label for="name">Name:</label>
             <input type="text" placeholder="Enter your name">
             <label for="email">email:</label>
             <input type="email" placeholder="Enter your email">
-            <textarea name="feedback" rows="5" cols="15">Feedback</textarea>
-            <button type="submit">Submit</button>
+            <textarea name="feedback" rows="5" cols="35">Enter your Feedback here...</textarea>
+            <button class="form-btn" type="submit">Submit</button>
         </div>
     </section>
-    <hr>
-    <footer>
-        <ul>
+    <!-- <hr> -->
+    <footer class="footer">
+        <ul class="links">
             <li><a href="#">Help Centre</a></li>
             <li><a href="#">Returns</a></li>
             <li><a href="#">Warranty</a></li>
@@ -91,7 +99,7 @@
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Track your Order</a></li>
         </ul>
-        <div>
+        <div class="icons">
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
